@@ -139,9 +139,7 @@
     justify-content: center;
     align-items: center;
   }
-  /*display: grid;*/
-  /*place-items: center;*/
-  /*gap: 1rem;*/
+
 }
 
 .avatar-circle {
@@ -200,8 +198,14 @@
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+
+  width: 100%;
+  flex: 1;
+
+  /* THIS IS THE FIX */
+  overflow: hidden;
 }
 
 .project-card {
@@ -209,6 +213,12 @@
   border-radius: 24px;
   background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(236, 110, 159, 0.16);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(236, 110, 159, 0.15);
 }
 
 .project-card h3 {
@@ -216,12 +226,25 @@
   color: #6f4e5b;
 }
 
-/*.project-header {*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  gap: 0.8rem;*/
-/*  margin-bottom: 0.6rem;*/
-/*}*/
+.projects-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  /* prevents extra rows visually leaking */
+  overflow: hidden;
+}
+
+.carousel-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #ec6e9f;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
 
 .project-icon img{
   width: 50px;
@@ -333,6 +356,12 @@
 
   .hero-actions {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
 
