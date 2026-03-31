@@ -23,21 +23,6 @@ const projects = [
       "In progress...",
     tools: "-",
     learned: "-"
-  },
-  {
-    id: 3,
-    title: "In progress...",
-    description:
-      "In progress...",
-    tools: "-",
-    learned: "-"
-  },
-  {
-    id: 4,
-    title: "Another Project",
-    description: "Testing carousel behavior.",
-    tools: "React",
-    learned: "Testing UI logic."
   }
 ];
 

@@ -142,31 +142,6 @@
 
 }
 
-.avatar-circle {
-  width: 240px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 30% 30%, #fff, #fde6ef 45%, #f7d1df 100%);
-  display: grid;
-  place-items: center;
-  color: #d56f99;
-  font-size: 6rem;
-  border: 1px solid rgba(236, 110, 159, 0.2);
-  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.9);
-}
-
-.mini-card {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.8rem 1rem;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 999px;
-  color: #8b6271;
-  border: 1px solid rgba(236, 110, 159, 0.18);
-}
-
 .section-card {
   padding-bottom: 2rem;
 }
@@ -204,7 +179,6 @@
   width: 100%;
   flex: 1;
 
-  /* THIS IS THE FIX */
   overflow: hidden;
 }
 
@@ -246,14 +220,6 @@
   cursor: pointer;
 }
 
-.project-icon img{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-
 .contact-card {
   text-align: center;
 }
@@ -281,42 +247,6 @@
   text-align: center;
   padding: 1rem 0 2.5rem;
   color: #9a7180;
-}
-
-.footer svg {
-  color: #ec6e9f;
-}
-
-.floating {
-  position: fixed;
-  border-radius: 50%;
-  filter: blur(8px);
-  opacity: 0.45;
-  z-index: -1;
-}
-
-.floating-one {
-  width: 180px;
-  height: 180px;
-  top: 100px;
-  left: -30px;
-  background: rgba(253, 230, 239, 0.9);
-}
-
-.floating-two {
-  width: 220px;
-  height: 220px;
-  top: 420px;
-  right: -40px;
-  background: rgba(247, 209, 223, 0.85);
-}
-
-.floating-three {
-  width: 140px;
-  height: 140px;
-  bottom: 80px;
-  left: 12%;
-  background: rgba(255, 236, 243, 0.9);
 }
 
 @media (max-width: 900px) {
